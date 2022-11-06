@@ -10,44 +10,44 @@
             <!-- /.card-header -->
             <div class="card-body">
                 <table id="example1" class="table table-bordered table-striped table-hover">
-                    <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Status</th>
-                        <th>Action</th>
-                    </tr>
+                    <thead class="text-center">
+                        <tr>
+                            <th>Name2</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <td>Trident</td>
-                        <td>Internet Explorer 4.0</td>
-                        <td><span class="badge bg-danger"> Win 95+</span></td>
+                    <tbody class="text-center">
+                        <tr>
+                            <td>Trident</td>
+                            <td>Internet Explorer 4.0</td>
+                            <td><span class="badge bg-danger"> Win 95+</span></td>
 
-                    </tr>
-                    <tr>
-                        <td>Trident</td>
-                        <td>Internet Explorer 5.0</td>
-                        <td><span class="badge bg-danger"> Win 95+</span></td>
-                    </tr>
-                    <tr>
-                        <td>Trident</td>
-                        <td>Internet Explorer 5.5</td>
-                        <td><span class="badge bg-danger"> Win 95+</span></td>
+                        </tr>
+                        <tr>
+                            <td>Trident</td>
+                            <td>Internet Explorer 5.0</td>
+                            <td><span class="badge bg-danger"> Win 95+</span></td>
+                        </tr>
+                        <tr>
+                            <td>Trident</td>
+                            <td>Internet Explorer 5.5</td>
+                            <td><span class="badge bg-danger"> Win 95+</span></td>
 
-                    </tr>
-                    <tr>
-                        <td>Trident</td>
-                        <td>Internet Explorer 6</td>
-                        <td><span class="badge bg-danger"> Win 95+</span></td>
+                        </tr>
+                        <tr>
+                            <td>Trident</td>
+                            <td>Internet Explorer 6</td>
+                            <td><span class="badge bg-danger"> Win 95+</span></td>
 
-                    </tr>
+                        </tr>
                     </tbody>
-                    <tfoot>
-                    <tr>
-                        <th>Rendering engine</th>
-                        <th>Browser</th>
-                        <th>Platform(s)</th>
-                    </tr>
+                    <tfoot class="text-center">
+                        <tr>
+                            <th>Rendering engine</th>
+                            <th>Browser</th>
+                            <th>Platform(s)</th>
+                        </tr>
                     </tfoot>
                 </table>
             </div>
@@ -56,9 +56,9 @@
     </template>
 
     <script>
-    export default {
-        name: "manage"
-    }
+        export default {
+            name: "manage"
+        }
     </script>
 
     <style scoped>

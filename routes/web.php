@@ -22,4 +22,4 @@ use Illuminate\Support\Facades\Route;
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/{anypath}', [App\Http\Controllers\HomeController::class, 'index'])->where('path','.*');
     Route::get('/post', [App\Http\Controllers\Admin\PostController::class, 'index']);
-    Route::get('/category', [App\Http\Controllers\Admin\CategoryController::class, 'index']);
+    Route::post('/add-category', [App\Http\Controllers\Admin\CategoryController::class, 'store'])->name('add-category');

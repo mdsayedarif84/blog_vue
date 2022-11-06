@@ -13,6 +13,7 @@ try {
     require('bootstrap');
     require('admin-lte');
     require('@fortawesome/fontawesome-free');
+    require('vform/src/components/bootstrap5');
 } catch (e) {}
 
 /**

@@ -3,7 +3,7 @@
     Home
 @endsection
 @section('body')
-    <div class="content-wrapper dark-mode">
+    <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <div class="container-fluid">

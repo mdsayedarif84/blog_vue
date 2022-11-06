@@ -7,6 +7,8 @@
 
     <!-- Theme style -->
     <link rel="stylesheet" href="{!! asset('css/app.css') !!}">
+    <link rel="stylesheet" href="{{ asset('admin/datatble/css/dataTables.bootstrap4.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/datatble/css/buttons.bootstrap4.css') }}">
     <style>
         .nav-link.router-link-exact-active.router-link-active {
             background: green;

@@ -28,6 +28,7 @@
         "@fortawesome/fontawesome-free": "^5.15.4",
         "admin-lte": "^3.1.0",
         "vform": "^2.1.2",
-        "vue-router": "^3.5.3"
+        "vue-router": "^3.5.3",
+        "vuejs-datatable": "^2.0.0-alpha.7"
     }
 }
