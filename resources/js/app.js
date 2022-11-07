@@ -23,8 +23,16 @@
         mode:'history',
     });
 
+    import storeData from './store/store';
+    import Vuex from 'vuex'
+    Vue.use(Vuex)
+    const store = new Vuex.Store({
+        storeData
+    });
+
     Vue.component('home', require('./components/backend/home').default);
     const app = new Vue({
         el: '#app',
-        router
+        router,
+        store
     });
