@@ -13,8 +13,8 @@
                     <div class="form-group row">
                         <label for="name" class="col-sm-4 col-form-label text-right">Category Name</label>
                         <div class="col-sm-8">
-                            <input type="text" name="name" v-model="form.name" class="form-control" id="name" placeholder="Enter Category Name">
-                            <div v-if="form.errors.has('name')" v-html="form.errors.get('name')" />
+                            <input type="text" name="name" v-model="form.name" class="form-control" id="name" placeholder="Enter Name" :class="{ 'is-invalid': form.errors.has('name') }">
+                            <div class="text-danger" v-if="form.errors.has('name')" v-html="form.errors.get('name')" />
                         </div>
                     </div>
                     <div class="form-group row">
@@ -28,7 +28,7 @@
                                 <input v-model="form.status" class="form-check-input" type="radio" id="inactive" value="0">
                                 <label class="form-check-label" for="inactive">Inactive</label>
                             </div>
-                            <div v-if="form.errors.has('name')" v-html="form.errors.get('name')" />
+                            <div class="text-danger" v-if="form.errors.has('name')" v-html="form.errors.get('name')" />
                         </div>
                     </div>
                     <div class="form-group row">
@@ -64,9 +64,12 @@
             },
             methods: {
                  addCategory () {
+                    let check = this;
                     this.form.post('/add-category')
                     .then(function(data){
-                        console.log(data);
+                        toastr.success('Category Save in success!', 'Good ob', {timeOut: 5000})
+                        check.form.name = null;
+                        check.form.status = null;
                     })
                 }
             }
